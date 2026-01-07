@@ -1,0 +1,103 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 150s linear infinite;
+  width: max-content;
+}
+
+
+/* Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Divine Pulsing Glow */
+@keyframes pulseGlow {
+  0% { transform: scale(1); filter: brightness(1); }
+  50% { transform: scale(1.1); filter: brightness(1.4); }
+  100% { transform: scale(1); filter: brightness(1); }
+}
+.animate-pulseGlow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+/* Slow rotating aura */
+@keyframes slowSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-slowSpin {
+  animation: slowSpin 10s linear infinite;
+}
+
+/* Smooth soft pulse for text */
+@keyframes softPulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+.animate-softPulse {
+  animation: softPulse 2.5s ease-in-out infinite;
+}
+
+
+#google_translate_element {
+  background-color: transparent !important;
+}
+
+/* Fix container size */
+#google_translate_element {
+    width: 200px;   /* change as needed */
+    height: 40px;
+    overflow: hidden; /* hides extra Google styling */
+}
+
+/* Fix the dropdown size */
+#google_translate_element select {
+    width: 100% !important;
+    height: 40px !important;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+
+.goog-te-combo {
+    width: 100% !important;
+    height: 40px !important;
+    border-radius: 6px !important;
+    padding: 5px !important;
+}
+
+
+.goog-logo-link,
+.goog-te-gadget span {
+    display: none !important;
+}
+
+
+/* Hide Google Translate default icons */
+.goog-te-gadget img,
+.goog-te-gadget span,
+.goog-te-banner-frame,
+.goog-logo-link {
+    display: none !important;
+}
+
+/* Make container clean
+#google_translate_element {
+    margin-top: 0;
+} */
+
+/* Style the dropdown */
