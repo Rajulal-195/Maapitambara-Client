@@ -20,5 +20,5 @@ With npm: npm run dev
 
 Step : 5 Open in Browser
 
-Visit http://localhost:5173
+Visit http://localhost:5173/ or your instatnce 
 (or the port shown in your terminal)
